@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node scripts/setup-react-scripts.js",
+    "react-scripts": "node ./scripts/react-scripts.js"
+  },
+  "bin": {
+    "react-scripts": "./scripts/react-scripts.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.3",
