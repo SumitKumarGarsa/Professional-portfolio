@@ -165,8 +165,8 @@ const mernResume = createPdf(
       heading: "Professional Experience",
       items: [
         {
-          title: "Senior Developer & Co-Founder | Nayeraa Nazaakat",
-          date: "2024 - Present",
+          title: "Senior Software Engineer & Co-Founder | Nayeraa Nazaakat",
+          date: "Jul 2026 - Present",
           sub: "Hanumangarh Junction, Rajasthan",
           bullets: [
             "Co-founded digital commerce venture; architected end-to-end full-stack web platform using React/Next.js, Node.js, and MongoDB.",

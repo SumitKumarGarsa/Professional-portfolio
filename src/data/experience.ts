@@ -132,8 +132,8 @@ export const studioData = {
 
   experiences: [
     {
-      period: "2024 — Present",
-      role: "Senior Developer & Co-Founder",
+      period: "Jul 2026 — Present",
+      role: "Senior Software Engineer & Co-Founder",
       company: "Nayeraa Nazaakat",
       location: "Hanumangarh Junction, Rajasthan",
       description:

@@ -209,9 +209,9 @@ app.get("/api/v1/telemetry", async (req, res) => {
 
   experience: [
     {
-      role: "Senior Developer & Co-Founder",
+      role: "Senior Software Engineer & Co-Founder",
       company: "Nayeraa Nazaakat",
-      period: "2024 — Present",
+      period: "Jul 2026 — Present",
       location: "Hanumangarh Junction, Rajasthan",
       description: "Co-founded the venture and spearheaded end-to-end technology architecture, custom e-commerce platform engineering, payment integrations, and administrative dashboards.",
       technologies: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Framer Motion", "Payment Gateways", "REST APIs"],
