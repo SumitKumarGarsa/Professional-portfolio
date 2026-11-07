@@ -69,7 +69,7 @@ export default function Header({
               }`}
             >
               {siteConfig.fullName}
-              {isCyber && <span className="text-[#00F59B] ml-2">// CYBER</span>}
+              {isCyber && <span className="text-[#00F59B] ml-2">{"//"} CYBER</span>}
             </span>
 
             {/* Tablet (640px to 1023px): "SUMIT GARSA" */}

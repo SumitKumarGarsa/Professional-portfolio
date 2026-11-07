@@ -62,7 +62,7 @@ export default function CyberCases() {
                 }`}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs text-[#8E9CAE]">{c.number} // {c.category}</span>
+                  <span className="font-mono text-xs text-[#8E9CAE]">{c.number} {"//"} {c.category}</span>
                   <span
                     className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase tracking-wider ${
                       c.severity === "CRITICAL"

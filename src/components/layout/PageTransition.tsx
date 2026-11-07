@@ -204,13 +204,13 @@ export default function PageTransition({
               <span className="text-[#EFEAE2] font-semibold">
                 SUMIT KUMAR GARSA
               </span>
-              <span className="hidden sm:inline text-[#6F6A62]">//</span>
+              <span className="hidden sm:inline text-[#6F6A62]">{"//"}</span>
               <span className="hidden sm:inline">
                 {isCyber ? "CYBERSEC RESEARCH" : "MERN ARCHITECT"}
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="hidden sm:inline text-[#6F6A62]">ROUTE //</span>
+              <span className="hidden sm:inline text-[#6F6A62]">ROUTE {"//"}</span>
               <span style={{ color: accentColor }} className="font-bold">
                 {meta.number}
               </span>
