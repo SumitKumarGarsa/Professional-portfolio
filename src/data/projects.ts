@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
     client: "Personal Project",
     role: "Full-Stack Engineer",
     timeline: "Aug 2025 — Present",
-    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
+    thumbnail: "/projects/codesync/dashboard.png",
     featured: true,
     overview:
       "CodeSync is a real-time collaborative code editor engineered with React.js (Vite), Node.js, WebSocket, Socket.io, and MongoDB. It supports 50+ concurrent users with sub-20ms operational synchronization, room session management, and robust conflict resolution.",
@@ -80,12 +80,13 @@ export const projectsData: Project[] = [
       "Containerized Docker & Deployment Workflow",
     ],
     tech: ["React.js", "Vite", "Node.js", "Express.js", "WebSocket", "Socket.io", "MongoDB", "Tailwind CSS"],
-    liveUrl: "https://github.com/sumitkumargarsa",
-    githubUrl: "https://github.com/sumitkumargarsa",
+    liveUrl: "https://codesync-flame.vercel.app/",
+    githubUrl: "https://github.com/SumitKumarGarsa/codesync",
     gallery: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "/projects/codesync/dashboard.png",
+      "/projects/codesync/ide-workspace.png",
+      "/projects/codesync/execution-output.png",
+      "/projects/codesync/fullscreen-editor.png",
     ],
   },
   {
@@ -194,8 +195,8 @@ export const projectsData: Project[] = [
       "Automated Test Case Runner & Console Stream",
     ],
     tech: ["React.js", "Vite", "CodeMirror", "Judge0 API", "Node.js", "Express.js", "JavaScript", "Tailwind CSS"],
-    liveUrl: "https://github.com/sumitkumargarsa",
-    githubUrl: "https://github.com/sumitkumargarsa",
+    liveUrl: "https://nex-ide-one.vercel.app/",
+    githubUrl: "https://github.com/SumitKumarGarsa/NexIDE",
     gallery: [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1556742049-0a67e557224f?auto=format&fit=crop&w=1200&q=80",

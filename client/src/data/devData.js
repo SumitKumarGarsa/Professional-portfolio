@@ -174,8 +174,8 @@ app.get("/api/v1/telemetry", async (req, res) => {
       longDescription: "Integrated Judge0 API for secure sandboxed code compilation and automated test case execution. Optimized rendering and execution pipeline for smooth UX on large files and rapid language switching.",
       tech: ["React.js", "Vite", "CodeMirror", "Judge0 API", "Node.js", "Express.js", "Tailwind CSS"],
       metrics: "10+ languages supported • 60fps UX on large files • Isolated sandbox execution",
-      liveUrl: "https://github.com/sumitkumargarsa",
-      githubUrl: "https://github.com/sumitkumargarsa",
+      liveUrl: "https://nex-ide-one.vercel.app/",
+      githubUrl: "https://github.com/SumitKumarGarsa/NexIDE",
       deliverables: [
         "React.js (Vite) CodeMirror Editor Interface",
         "Judge0 Sandboxed Compilation API Bridge",
