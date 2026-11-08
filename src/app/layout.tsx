@@ -92,17 +92,6 @@ export default async function RootLayout({
     image: `${siteConfig.siteUrl}${siteConfig.profileImage}`,
     jobTitle: siteConfig.role,
     url: siteConfig.siteUrl,
-    email: siteConfig.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Gurugram",
-      addressRegion: "Haryana",
-      addressCountry: "India",
-    },
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "Vellore Institute of Technology (VIT)",
-    },
     sameAs: [
       siteConfig.socials.github,
       siteConfig.socials.linkedin,

@@ -10,9 +10,6 @@ import Footer from "@/components/layout/Footer";
 import { GithubIcon, LinkedinIcon, TwitterXIcon } from "@/components/common/SocialIcons";
 import {
   Mail,
-  Phone,
-  Copy,
-  Check,
   MapPin,
   Calendar,
   ArrowUpRight,
@@ -34,7 +31,6 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactPage() {
-  const [copied, setCopied] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -55,12 +51,6 @@ export default function ContactPage() {
       honeypot: "",
     },
   });
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(siteConfig.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2200);
-  };
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -90,7 +80,7 @@ export default function ContactPage() {
         colors: ["#EFEAE2", "#FF6A1A", "#6F6A62"],
       });
     } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : "An unexpected error occurred. Please try again or email directly.";
+      const message = err instanceof Error ? err.message : "An unexpected error occurred while dispatching transmission. Please try again.";
       setErrorMessage(message);
     } finally {
       setIsSubmitting(false);
@@ -273,35 +263,21 @@ export default function ContactPage() {
 
             {/* Side Info Column (5 cols) */}
             <aside className="lg:col-span-5 flex flex-col gap-8">
-              {/* Email Copy Card */}
+              {/* Transmission Delivery Card */}
               <div className="p-8 rounded-2xl bg-[var(--surface-card)] border border-[var(--border)] shadow-sm">
                 <span className="font-mono text-xs uppercase tracking-widest text-[var(--muted)] mb-2 block font-semibold">
-                  Direct Channel
+                  Secure Delivery
                 </span>
-                <p className="font-sans text-xs text-[var(--muted)] mb-4">
-                  Prefer direct correspondence? Click to copy my personal address:
+                <h3 className="font-display text-xl uppercase tracking-tight text-[var(--text)] mb-3">
+                  Direct Inbox Routing
+                </h3>
+                <p className="font-sans text-xs text-[var(--muted)] mb-5 leading-relaxed">
+                  Inquiries submitted through this form are dispatched securely to my primary inbox. I review every submission personally and respond promptly.
                 </p>
-
-                <button
-                  type="button"
-                  onClick={copyEmail}
-                  className="w-full flex items-center justify-between p-4 rounded-xl bg-[var(--surface)] border border-[var(--border)] font-mono text-xs text-[var(--text)] hover:border-[var(--accent)] transition-all cursor-pointer group"
-                >
-                  <span className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[var(--accent)]" />
-                    <span>{siteConfig.email}</span>
-                  </span>
-                  <div className="flex items-center gap-1.5 text-[var(--muted)] group-hover:text-[var(--text)]">
-                    {copied ? (
-                      <>
-                        <Check className="w-4 h-4 text-emerald-500" />
-                        <span className="text-[10px] text-emerald-500 font-bold uppercase">Copied!</span>
-                      </>
-                    ) : (
-                      <Copy className="w-4 h-4" />
-                    )}
-                  </div>
-                </button>
+                <div className="flex items-center gap-2.5 p-3.5 rounded-xl bg-[var(--surface)] border border-[var(--border)] font-mono text-xs text-[var(--text)]">
+                  <Sparkles className="w-4 h-4 text-[var(--accent)] shrink-0" />
+                  <span>Powered by Resend Delivery</span>
+                </div>
               </div>
 
               {/* Location & Status Card */}
@@ -316,10 +292,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center gap-3 font-mono text-xs text-[var(--text)]">
-                  <Phone className="w-4 h-4 text-[var(--accent)] shrink-0" />
-                  <a href={`tel:${siteConfig.phone}`} className="hover:underline">
-                    {siteConfig.phone}
-                  </a>
+                  <Calendar className="w-4 h-4 text-[var(--accent)] shrink-0" />
+                  <span>Response SLA: &lt; 24 Hours</span>
                 </div>
 
                 <div className="flex items-center gap-3 font-mono text-xs text-[var(--text)]">

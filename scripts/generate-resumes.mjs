@@ -131,7 +131,7 @@ function createPdf(title, subtitle, sections) {
 // 1. MERN Stack Full-Stack Developer Resume (Synchronized with Official Resume)
 const mernResume = createPdf(
   "SUMIT KUMAR GARSA",
-  "MERN Full Stack Developer (React . Node.js . Vite) | Gurugram, Haryana | ersumitkumargarsa@gmail.com | +91 8619089693",
+  "MERN Full Stack Developer (React . Node.js . Vite) | Gurugram, Haryana | github.com/sumitkumargarsa",
   [
     {
       heading: "Professional Summary",
@@ -247,7 +247,7 @@ const mernResume = createPdf(
 // 2. Cybersecurity & DevSecOps Resume (Synchronized with Official Credentials)
 const cyberResume = createPdf(
   "SUMIT KUMAR GARSA",
-  "Cybersecurity & DevSecOps Engineer | Gurugram, Haryana | ersumitkumargarsa@gmail.com | +91 8619089693",
+  "Cybersecurity & DevSecOps Engineer | Gurugram, Haryana | github.com/sumitkumargarsa",
   [
     {
       heading: "Security Profile",

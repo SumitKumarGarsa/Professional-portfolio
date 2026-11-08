@@ -342,14 +342,15 @@ export default function FullscreenMenu({
                 <span className="uppercase tracking-wider">X</span>
               </a>
 
-              <a
-                href={`mailto:${siteConfig.email}`}
+              <Link
+                href="/contact"
+                onClick={onClose}
                 className="flex items-center gap-1.5 transition-colors hover:text-[#EFEAE2]"
-                aria-label="Email Sumit Kumar Garsa"
+                aria-label="Contact Sumit Kumar Garsa"
               >
                 <Mail className="w-3.5 h-3.5" />
-                <span className="uppercase tracking-wider">{siteConfig.email}</span>
-              </a>
+                <span className="uppercase tracking-wider">Contact</span>
+              </Link>
             </div>
           </div>
         </motion.div>

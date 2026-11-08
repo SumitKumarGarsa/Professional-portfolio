@@ -3,9 +3,7 @@ export const devData = {
     name: "Sumit Kumar Garsa",
     initials: "SKG",
     role: "MERN Full Stack Developer (React · Node.js · Vite)",
-    location: "Gurugram, Haryana (Remote)",
-    email: "ersumitkumargarsa@gmail.com",
-    phone: "+91 8619089693",
+    location: "Remote / Available Globally",
     avatar: "/sumit-profile.jpg",
     resumeUrl: "/resumes/Sumit_Kumar_Garsa_MERN_Resume.pdf",
     status: "Open to High-Impact Full-Stack Roles",
@@ -17,7 +15,6 @@ export const devData = {
     { name: "GitHub", url: "https://github.com/sumitkumargarsa", handle: "@sumitkumargarsa" },
     { name: "LinkedIn", url: "https://linkedin.com/in/sumitkumargarsa", handle: "in/sumitkumargarsa" },
     { name: "Twitter / X", url: "https://twitter.com/sumitgarsa", handle: "@sumitgarsa" },
-    { name: "Email", url: "mailto:ersumitkumargarsa@gmail.com", handle: "ersumitkumargarsa@gmail.com" },
   ],
 
   hero: {

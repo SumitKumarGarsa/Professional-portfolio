@@ -48,8 +48,7 @@ export const MERN_PORTFOLIO_DATA = {
     role: "MERN Full Stack Developer (React · Node.js · Vite)",
     badge: "MERN Stack Specialist",
     availability: "Open to Full-Stack Roles & High-Impact Opportunities",
-    location: "Gurugram, Haryana | Remote (UTC +5:30)",
-    email: "ersumitkumargarsa@gmail.com",
+    location: "Remote | Available Globally (UTC +5:30)",
     bio: "Designing responsive, user-friendly web applications using React.js (Vite), Next.js, Tailwind CSS, and Framer Motion. Standing up Node.js REST APIs independently and owning features end-to-end.",
   },
 
@@ -236,8 +235,7 @@ export const CYBER_PORTFOLIO_DATA = {
     role: "Offensive Security Researcher & DevSecOps Engineer",
     badge: "Red Team & DevSecOps Specialist",
     availability: "Available for Security Audits & Technical Scoping",
-    location: "Gurugram, Haryana | Remote",
-    email: "ersumitkumargarsa@gmail.com",
+    location: "Remote | Available Globally",
     bio: "Hardening web architectures, applying secure coding practices, automated input sanitization, and endpoint penetration testing backed by Deloitte and Cisco cybersecurity credentials.",
   },
 

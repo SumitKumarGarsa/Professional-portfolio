@@ -21,12 +21,6 @@ export default function Contact() {
     message: "",
   });
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(data.brand.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) return;
@@ -116,13 +110,12 @@ export default function Contact() {
                 Direct line to the principal engineer. Strict NDA and confidentiality guaranteed.
               </p>
 
-              {/* Copy Email Button */}
-              <button
-                onClick={handleCopyEmail}
-                className={`w-full flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer ${
+              {/* Direct Route Indicator */}
+              <div
+                className={`w-full flex items-center justify-between p-4 rounded-xl border transition-all ${
                   mode === "cyber"
-                    ? "bg-[#141E2C] border-[#223044] hover:border-[#00F59B]"
-                    : "bg-[#F4EFEA] border-[#D5CDC0] hover:border-[#141311]"
+                    ? "bg-[#141E2C] border-[#223044]"
+                    : "bg-[#F4EFEA] border-[#D5CDC0]"
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -134,27 +127,17 @@ export default function Contact() {
                       mode === "cyber" ? "text-[#E2E8F0]" : "text-[#141311]"
                     }`}
                   >
-                    {data.brand.email}
+                    Encrypted Form Transmission
                   </span>
                 </div>
-                <div
-                  className={`flex items-center gap-1.5 text-xs font-mono ${
+                <span
+                  className={`text-xs font-mono font-medium ${
                     mode === "cyber" ? "text-[#00F59B]" : "text-[#787265]"
                   }`}
                 >
-                  {copied ? (
-                    <>
-                      <Check className="w-4 h-4 text-emerald-500" />
-                      <span className="font-semibold text-emerald-500">Copied!</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-4 h-4" />
-                      <span>Copy</span>
-                    </>
-                  )}
-                </div>
-              </button>
+                  Direct SLA
+                </span>
+              </div>
             </div>
 
             {/* Timezone & Status Widget */}

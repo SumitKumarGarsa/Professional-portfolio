@@ -62,13 +62,13 @@ export default function Footer() {
               <span className="font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
                 Direct Inquiries
               </span>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="font-mono text-base sm:text-lg text-[var(--text)] hover:text-[var(--accent)] transition-colors flex items-center gap-2"
+              <Link
+                href="/contact"
+                className="font-mono text-base sm:text-lg text-[var(--text)] hover:text-[var(--accent)] transition-colors inline-flex items-center gap-2 group w-fit"
               >
                 <Mail className="w-4 h-4 text-[var(--accent)]" />
-                <span>{siteConfig.email}</span>
-              </a>
+                <span className="group-hover:translate-x-1 transition-transform">Get in Touch via Contact Form &rarr;</span>
+              </Link>
             </div>
           </div>
 

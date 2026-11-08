@@ -16,9 +16,7 @@ export const siteConfig = {
     "MERN Full Stack Developer specializing in responsive, user-friendly React.js (Vite) and Next.js applications, robust Node.js / Express REST APIs, real-time WebSockets, and high-performance MongoDB data persistence. Backed by 552 LeetCode problems solved.",
   
   // Location & Contact
-  location: "Gurugram, Haryana (Remote / Available Globally)",
-  email: "ersumitkumargarsa@gmail.com",
-  phone: "+91 8619089693",
+  location: "Remote / Available Globally",
   availabilityStatus: "Open for Full-Stack Roles & High-Impact Opportunities",
   
   // Header & Navbar
