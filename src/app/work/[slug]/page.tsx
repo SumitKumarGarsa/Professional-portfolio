@@ -6,6 +6,7 @@ import { projectsData, Project } from "@/data/projects";
 import { siteConfig } from "@/data/site";
 import Footer from "@/components/layout/Footer";
 import { GithubIcon } from "@/components/common/SocialIcons";
+import { ProjectHeroMedia, ProjectGallerySection } from "@/components/work/ProjectMedia";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -141,17 +142,12 @@ export default async function CaseStudyPage({ params }: CaseStudyProps) {
             </div>
           </div>
 
-          {/* Hero Image Container */}
-          <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--surface-card)] mb-16 sm:mb-24 shadow-2xl">
-            <Image
-              src={project.thumbnail}
-              alt={project.title}
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 1280px) 100vw, 1280px"
-            />
-          </div>
+          {/* Hero Image Container with Zoom & Lightbox */}
+          <ProjectHeroMedia
+            thumbnail={project.thumbnail}
+            title={project.title}
+            gallery={project.gallery}
+          />
 
           {/* Results Metrics Banner */}
           <div className="p-8 sm:p-12 rounded-2xl bg-[var(--surface-card)] border border-[var(--border)] mb-16 sm:mb-24 shadow-sm">
@@ -294,33 +290,12 @@ export default async function CaseStudyPage({ params }: CaseStudyProps) {
                 </div>
               </section>
 
-              {/* 6. Screenshot Gallery */}
-              {project.gallery && project.gallery.length > 0 && (
-                <section>
-                  <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[var(--muted)] mb-3">
-                    <span className="text-[var(--accent)] font-bold">06</span>
-                    <span>&bull;</span>
-                    <span>INTERFACE TELEMETRY</span>
-                  </div>
-                  <h2 className="font-display text-3xl sm:text-4xl uppercase tracking-tight text-[var(--text)] mb-6">
-                    SCREENSHOT GALLERY
-                  </h2>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {project.gallery.map((imgUrl, i) => (
-                      <div key={i} className="relative aspect-[16/10] rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--surface-card)] shadow-sm">
-                        <Image
-                          src={imgUrl}
-                          alt={`${project.title} screenshot ${i + 1}`}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 40vw"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
+              {/* 6. Screenshot Gallery with Zoom & Lightbox */}
+              <ProjectGallerySection
+                gallery={project.gallery}
+                title={project.title}
+                thumbnail={project.thumbnail}
+              />
             </div>
 
             {/* Right 4 Columns: Sticky Sidebar Specification */}
