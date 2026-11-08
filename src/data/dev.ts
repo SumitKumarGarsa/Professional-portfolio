@@ -149,7 +149,7 @@ export const devData = {
       category: "Full-Stack",
       year: "2025",
       client: "Personal Project",
-      thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      thumbnail: "/projects/nexide/cover.jpg",
       description: "Browser-based development environment supporting 10+ programming languages with syntax highlighting via CodeMirror and automated test case execution via Judge0 API.",
       problem: "Executing arbitrary user code safely while keeping browser editor rendering smooth during large file edits and rapid language switching.",
       approach: "Configured CodeMirror syntax packs with optimized rendering pipelines and interfaced with Judge0 containerized execution sandbox.",

@@ -156,7 +156,7 @@ export const projectsData: Project[] = [
     client: "Personal Project",
     role: "Full-Stack & Systems Engineer",
     timeline: "2025",
-    thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
+    thumbnail: "/projects/nexide/cover.jpg",
     featured: true,
     overview:
       "NexIDE is a browser-based development environment built with React.js (Vite), CodeMirror, and the Judge0 API. It supports 10+ programming languages with syntax highlighting, automated test case execution, and smooth large-file rendering.",
@@ -198,7 +198,7 @@ export const projectsData: Project[] = [
     liveUrl: "https://nex-ide-one.vercel.app/",
     githubUrl: "https://github.com/SumitKumarGarsa/NexIDE",
     gallery: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "/projects/nexide/cover.jpg",
       "https://images.unsplash.com/photo-1556742049-0a67e557224f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80",
     ],
