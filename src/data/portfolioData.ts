@@ -137,7 +137,7 @@ export const MERN_PORTFOLIO_DATA = {
       longDescription: "Built a browser-based IDE supporting 10+ programming languages with syntax highlighting via CodeMirror. Integrated Judge0 API for secure sandboxed code compilation and automated test case execution. Optimized rendering and execution pipeline for smooth UX on large files and rapid language switching.",
       tech: ["React.js", "Vite", "CodeMirror", "Judge0 API", "Node.js", "Express.js", "Tailwind CSS"],
       metrics: "10+ languages supported • 60fps UX on large files • Isolated sandbox execution",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      image: "/projects/nexide/cover.jpg",
       liveUrl: "https://nex-ide-one.vercel.app/",
       githubUrl: "https://github.com/SumitKumarGarsa/NexIDE",
       featured: true,

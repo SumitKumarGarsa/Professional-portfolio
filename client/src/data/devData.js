@@ -169,7 +169,7 @@ app.get("/api/v1/telemetry", async (req, res) => {
       title: "NexIDE Browser Code Compiler",
       tagline: "Multi-language browser IDE with CodeMirror and Judge0 sandboxed execution.",
       filter: "Frontend",
-      thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      thumbnail: "/projects/nexide/cover.jpg",
       description: "Built a browser-based IDE supporting 10+ programming languages with syntax highlighting via CodeMirror and automated test execution via Judge0 API.",
       longDescription: "Integrated Judge0 API for secure sandboxed code compilation and automated test case execution. Optimized rendering and execution pipeline for smooth UX on large files and rapid language switching.",
       tech: ["React.js", "Vite", "CodeMirror", "Judge0 API", "Node.js", "Express.js", "Tailwind CSS"],
